@@ -1,0 +1,5 @@
+/frontend
+/node_modules
+Dockerfile
+package-lock.json
+docker-componse.yml

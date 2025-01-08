@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+.cardHeader {
+  align-self: start;
+}
+.cardTitle {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+.todo-form {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 15px;
+}
+.inputDiv input {
+  width: 100%;
+  padding: 2px 14px;
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  max-width: 500px;
+}
+
+.todo-item:hover {
+  background-color: #f3f4f6;
+}
+.delete-button {
+  padding: 4px 4px;
+}
+.trashIcon {
+  width: 20px;
+}
