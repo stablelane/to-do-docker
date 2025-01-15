@@ -8,17 +8,13 @@ services:
     volumes:
       - ./backend/test.db:/app/test.db
     command: 'npm run devStart'
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
-      interval: 30s
-      retries: 3
-
+    
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "5173:5173"
+      - "8080:80"
     depends_on:
       - backend
